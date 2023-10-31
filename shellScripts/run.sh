@@ -29,7 +29,7 @@ JS_FOLDER=${BUILD_DIR}/${CIRCUIT_NAME}_js
 WITNESS=witness.wtns
 
 POTS_DIR=pots # directory to keep PowersOfTau
-POWERTAU=14 # power value for "powersOfTau"
+POWERTAU=16 # power value for "powersOfTau"
 
 PTAU_FILE=pot${POWERTAU}_0000.ptau
 PTAU_PATH=${POTS_DIR}/${PTAU_FILE}
