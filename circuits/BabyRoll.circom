@@ -8,9 +8,10 @@ include "../node_modules/circomlib/circuits/eddsamimc.circom";
 include "../node_modules/circomlib/circuits/comparators.circom";
 
 // Tasks for mastering Circom:
-// TODO Prevent replay attack: add nonce.
-// TODO Add an overflow check for the recipient's balance.
-// TODO Optional: add support for processing multiple transactions (MultyTx rollup).
+// TODO: Prevent replay attack: add nonce.
+// TODO: Add an overflow check for the recipient's balance.
+// TODO: Write verifier smart-contract.
+// TODO: Optional: add support for processing multiple transactions (MultyTx rollup).
 
 template BabyRoll(k) { // k is the depth of accounts tree
     signal input initial_rollup_root;
