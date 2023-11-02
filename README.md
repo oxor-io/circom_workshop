@@ -1,4 +1,4 @@
-# BabyRoll Project README
+# BabyRoll
 
 Welcome to BabyRoll, an educational initiative brought to you by CyberAcademy and Oxorio.
 
@@ -12,10 +12,10 @@ To get started with the BabyRoll project, follow these steps:
 
 1. **Clone the Repository:**
 
-   ```
-   git clone git@github.com:oxor-io/circom_workshop.git
-   cd circom_workshop
-   ```
+```bash
+git clone git@github.com:oxor-io/circom_workshop.git
+cd circom_workshop
+```
 
 2. **Explore the Code:**
    Familiarize yourself with the project structure and existing codebase.
@@ -23,17 +23,32 @@ To get started with the BabyRoll project, follow these steps:
 3. **Completing Homework Tasks:**
    The project includes several TODO tasks to enhance your understanding and skills. Your homework assignments are as follows:
 
-   - **Prevent Replay Attack:**
-     Implement a solution to prevent replay attacks by adding a nonce to transactions.
+- **Prevent Replay Attack:**
+  Implement a solution to prevent replay attacks by adding a nonce to transactions.
 
-   - **Overflow Check:**
-     Add an overflow check for the recipient's balance to prevent unintended behavior.
+- **Overflow Check:**
+  Add an overflow check for the recipient's balance to prevent unintended behavior.
 
-   - **Write Verifier Smart Contract:**
-     Write a verifier smart contract to validate the correctness of the ZK rollup proofs.
+- **Write Verifier Smart Contract:**
+  Write a verifier smart contract to validate the correctness of the ZK rollup proofs.
 
-   - **Optional: MultyTx Rollup Support:**
-     If you are feeling adventurous, explore adding support for processing multiple transactions (MultyTx rollup). This task is optional but highly encouraged for a more comprehensive learning experience.
+- **Optional: MultyTx Rollup Support:**
+  If you are feeling adventurous, explore adding support for processing multiple transactions (MultyTx rollup). This task is optional but highly encouraged for a more comprehensive learning experience.
+
+4. **Script Commands:**
+   BabyRoll provides convenient script commands to simplify the development process. Here are the available commands:
+
+- **Run `npm run generateTestInput`:**
+  Create an `input.json` file with signal values for BabyRoll.
+
+- **Run `npm run test circuit`:**
+  Compile BabyRoll, generate a proof with `input.json` as signal values, and run the verification process.
+
+- **Run `npm run solidityVerifier circuit`:**
+  Create a verifier smart contract. Note: Ensure you have a file with a `.zkey` extension in the "build" folder (generated when you run `npm run test circuit` or `npm run testNoPots circuit`).
+
+- **Run `npm run getCalldata`:**
+  Generate calldata for the `verifyProof` function with the proofs you created earlier.
 
 ## Resources
 
@@ -42,4 +57,4 @@ To get started with the BabyRoll project, follow these steps:
 
 ## Support
 
-If you encounter any issues, have questions, or need assistance, please reach out us in the issues section. Happy coding!
+If you encounter any issues, have questions, or need assistance, please reach out to us in the issues section. Happy coding!
